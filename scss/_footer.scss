@@ -1,0 +1,56 @@
+@use '_variables.scss';
+
+@mixin boxSize {
+    padding: 85px;
+    border-radius: variables.$boxRadius;
+}
+html, body {
+    height: 100%;
+    font-family: sans-serif;
+}
+.bottom-content {
+    height: 300px;
+    display: flex;
+    padding-left: 2%;
+    background-color: variables.$primaryColor;
+    border-radius: variables.$boxRadius;
+}
+.content-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-text {
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+    padding-top: 85px;
+}
+.content-text h2 {
+    margin-bottom: 80px;
+}
+.content-text p {
+    max-width: 150px;
+}
+.boxes {
+    display: flex;
+    flex: 1;
+}
+.box {
+    position: relative;
+    background-color: variables.$boxColor;
+    @include boxSize();
+    margin-left: 5vw;
+    box-sizing: border-box;
+}
+.box p {
+    position: absolute;
+    font-weight: bold;
+    top: 15%;
+    left: 15%;
+}
+.box:last-child p {
+    top: 10%;
+    max-width: 80px;
+}

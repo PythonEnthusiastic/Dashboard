@@ -5,6 +5,7 @@ html, body {
 
 .bottom-content {
   height: 300px;
+  width: 97.5%;
   display: flex;
   padding-left: 2%;
   background-color: tan;
@@ -41,7 +42,7 @@ html, body {
 .box {
   position: relative;
   background-color: white;
-  padding: 85px;
+  padding: 109px;
   border-radius: 20px;
   margin-left: 5vw;
   box-sizing: border-box;
@@ -167,6 +168,11 @@ body {
   display: flex;
 }
 
+.content {
+  background-color: #F3F1EF;
+  width: 100%;
+}
+
 .box1 {
   background-color: #101322;
   height: 400px;
@@ -200,6 +206,7 @@ body {
   width: 75%;
   border-radius: 20px;
   margin: 15px;
+  display: flex;
 }
 .box2 h2 {
   color: #111729;

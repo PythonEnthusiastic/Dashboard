@@ -20,6 +20,11 @@ body {
     display: flex;
 }
 
+.content {
+    background-color: #F3F1EF;
+    width: 100%;
+}
+
 .box1 {
     background-color: variables.$color1;
     height: 400px;
@@ -54,6 +59,7 @@ body {
     width: 75%;
     border-radius: variables.$radius;
     margin: variables.$space-between;
+    display: flex;
     h2 {
         color: #111729;
         margin: variables.$heading-spacing;
